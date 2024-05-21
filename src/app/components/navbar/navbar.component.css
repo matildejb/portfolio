@@ -1,0 +1,8 @@
+li:hover {
+   font-weight: bolder;
+}
+
+.navbar-brand:hover {
+   color:#5AC8C8;
+    font-weight: bolder;
+}
