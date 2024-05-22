@@ -1,0 +1,30 @@
+.custom-card {
+  width: calc(
+    33.333% - 20px
+  ); /* Tamaño flexible de la tarjeta con un espacio fijo */
+  margin: 20px; /* Espacio entre las tarjetas */
+  border: 2px solid #004a59; /* Borde más marcado */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  cursor: pointer;
+  transform: translateY(-10px); /* Efecto de levantamiento al pasar el ratón */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  height: 15rem;
+}
+
+h5 {
+  text-align: center;
+  border-top: 2px solid #004a59;
+  padding-top: 15px;
+}

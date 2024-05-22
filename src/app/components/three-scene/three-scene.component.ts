@@ -1,13 +1,13 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
 import * as THREE from 'three';
-
 @Component({
   selector: 'app-three-scene',
   standalone: true,
   imports: [],
   templateUrl: './three-scene.component.html',
-  styleUrl: './three-scene.component.css'
+  styleUrls: ['./three-scene.component.css']
 })
 export class ThreeSceneComponent implements OnInit {
  @ViewChild('canvasContainer', { static: true }) canvasContainer!: ElementRef;
@@ -49,8 +49,51 @@ export class ThreeSceneComponent implements OnInit {
     //Añadir nuestro diseño a nuestra escena
     scene.add(cube);
 
-    //CREAR TEXTO 
+    // Generar una textura de patrón para el lateral
+    const canvas = document.createElement('canvas');
+    canvas.width = 50;
+    canvas.height = 50;
+    const context = canvas.getContext('2d');
+    if (context) {
+      context.fillStyle = '#004a59'; // Color de fondo
+      context.fillRect(0, 0, canvas.width, canvas.height);
+      context.strokeStyle = '#027184'; // Color de las líneas
+      context.lineWidth = 4;
+      context.beginPath();
+      context.moveTo(0, 0);
+      context.lineTo(canvas.width, canvas.height);
+      context.moveTo(canvas.width, 0);
+      context.lineTo(0, canvas.height);
+      context.stroke();
+    }
+     const texture = new THREE.CanvasTexture(canvas);
+    //CREAR TEXTO
+    const loader = new FontLoader();
 
+    loader.load('../../../assets/fonts/JetBrains Mono_Regular.json', (font: Font) => {
+      console.log(font)
+      const textGeometry = new TextGeometry('Web\nDEVELOPMENT', {
+        font: font,
+        size: window.innerWidth < 768 ? 2 : 3,
+        height: 2,
+      });
+      //Material para el texto
+      const materials = [
+        new THREE.MeshBasicMaterial({ color:  0x004A59 }), // Textura frontal
+        new THREE.MeshBasicMaterial({ map: texture }) // Textura lateral con color
+      ];
+
+      //Crear mesh del texto
+      const textMesh = new THREE.Mesh(textGeometry, materials);
+
+       // Ajustar la posición del texto para dispositivos móviles
+  textMesh.position.x = window.innerWidth < 768 ? -10 : -25;
+  textMesh.position.y = window.innerWidth < 768 ? 2 : 1;
+
+      //Agregar a la escena el mesh
+      scene.add(textMesh);
+      renderer.render(scene, camera);
+    });
 
     camera.position.z = 20;
 

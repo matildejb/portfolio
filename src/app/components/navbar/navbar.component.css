@@ -6,3 +6,13 @@ li:hover {
    color:#5AC8C8;
     font-weight: bolder;
 }
+
+
+.btn {
+    background-color: #004a59;
+    color: white;
+}
+.btn:hover {
+    background-color: #012229;
+}
+
