@@ -21,10 +21,39 @@ a {
 
 img {
   height: 15rem;
+  
+}
+
+.card-body {
+  margin-top: 10px;
+  border-top: 2px solid #004a59;
+  display: flex;
+  justify-content: space-around;
 }
 
 h5 {
   text-align: center;
-  border-top: 2px solid #004a59;
-  padding-top: 15px;
+  
+}
+
+
+.angular {
+  font-size: 2rem;
+  color: rgb(226, 43, 43);
+}
+.js {
+  font-size: 2rem;
+  color: rgb(225, 218, 12);
+}
+.html {
+  font-size: 2rem;
+  color: rgb(225, 72, 12);
+}
+.css {
+  font-size: 2rem;
+  color: rgb(12, 40, 225);
+}
+.bootstrap {
+  font-size: 2rem;
+  color: rgb(101, 12, 225);
 }

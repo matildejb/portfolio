@@ -1,4 +1,4 @@
-<section>
+<div [class.night-mode]="isNightMode()">
 
 <header>
 <app-navbar></app-navbar> 
@@ -8,6 +8,7 @@
 <router-outlet />
 
 
+<app-footer></app-footer>
 
 
-</section>
+</div>

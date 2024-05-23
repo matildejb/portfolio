@@ -3,6 +3,7 @@ import { ThreeSceneComponent } from './components/three-scene/three-scene.compon
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
     //Ruta principal, siempre que carge la app nos redirige a la home
@@ -10,5 +11,5 @@ export const routes: Routes = [
   { path: 'matilde', component: ThreeSceneComponent },
   { path: 'about-me', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: FooterComponent },
+  { path: 'contact', component: ContactComponent },
 ];

@@ -1,0 +1,23 @@
+.container {
+   height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color:  #FDF3B8;
+    font-weight: bolder;
+}
+
+.iconos {
+   display: flex;
+   gap: 2rem;
+   font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
