@@ -1,6 +1,4 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader';
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
 import * as THREE from 'three';
 @Component({
   selector: 'app-three-scene',
@@ -67,34 +65,7 @@ export class ThreeSceneComponent implements OnInit {
       context.stroke();
     }
      const texture = new THREE.CanvasTexture(canvas);
-    //CREAR TEXTO
-    const loader = new FontLoader();
-
-    loader.load('../../../assets/fonts/JetBrains Mono_Regular.json', (font: Font) => {
-      console.log(font)
-      const textGeometry = new TextGeometry('Web\nDEVELOPMENT', {
-        font: font,
-        size: window.innerWidth < 768 ? 2 : 3,
-        height: 2,
-      });
-      //Material para el texto
-      const materials = [
-        new THREE.MeshBasicMaterial({ color:  0x004A59 }), // Textura frontal
-        new THREE.MeshBasicMaterial({ map: texture }) // Textura lateral con color
-      ];
-
-      //Crear mesh del texto
-      const textMesh = new THREE.Mesh(textGeometry, materials);
-
-       // Ajustar la posición del texto para dispositivos móviles
-  textMesh.position.x = window.innerWidth < 768 ? -10 : -25;
-  textMesh.position.y = window.innerWidth < 768 ? 2 : 1;
-
-      //Agregar a la escena el mesh
-      scene.add(textMesh);
-      renderer.render(scene, camera);
-    });
-
+    
     camera.position.z = 20;
 
     const animate = () => {
