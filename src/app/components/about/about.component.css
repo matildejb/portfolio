@@ -1,20 +1,23 @@
 .card img {
-  border-radius: 50%; /* Redondea la imagen al 50% del tamaño */
+  border-radius: 20%; /* Redondea la imagen al 50% del tamaño */
   filter: brightness(1) contrast(1) saturate(1.4);
+  width: 15rem;
 }
 
 .card {
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.6); /* Sombra para darle un efecto 3D */
 }
 
+.card-text {
+  font-size: 1.2rem;
+}
 
 @media (min-width: 768px) {
   .card {
     flex-direction: row; /* Cambiar la dirección del flexbox a fila */
     align-items: flex-start;
-    
   }
 
   .card-img-container {
@@ -27,22 +30,29 @@
     margin-left: 20px;
     margin-right: 20px;
   }
-
 }
+
+/*Dispoitivos mobles*/
 @media (max-width: 1225px) {
+  .icons i {
+    visibility: hidden;
+  }
 
-.icons i{
-  visibility: hidden;
+  .card img {
+    width: 10rem;
+  }
+
+  .card-text {
+  font-size: 1.1rem;
+}
 }
 
-}
-
-  .background {
+.background {
   position: relative;
   width: 100%;
   height: auto; /* Ajusta la altura según tu diseño */
-   display: flex;
-   flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: flex-start;
 }
@@ -51,44 +61,35 @@
   position: absolute;
   font-size: 4rem; /* Tamaño del icono */
   top: 50px;
-  transform: translateY(-50%);  
+  transform: translateY(-50%);
 }
-.icons i{
+.icons i {
   margin-left: 70px;
 }
 .angular {
-  
   color: rgb(226, 43, 43);
 }
 .js {
-  
   color: rgb(225, 218, 12);
 }
 .html {
-  
   color: rgb(225, 72, 12);
 }
 .css {
-  
   color: rgb(12, 40, 225);
 }
 .bootstrap {
-  
   color: rgb(101, 12, 225);
 }
 .github {
-  
   color: rgb(0, 0, 0);
 }
 .node {
-  
   color: rgb(32, 218, 12);
 }
 .gitkraken {
-  
   color: rgb(10, 85, 7);
 }
 .docker {
-  
   color: rgb(12, 143, 225);
 }
