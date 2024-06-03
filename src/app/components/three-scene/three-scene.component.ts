@@ -1,9 +1,11 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import * as THREE from 'three';
+import Typed from 'typed.js';
 @Component({
   selector: 'app-three-scene',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './three-scene.component.html',
   styleUrls: ['./three-scene.component.css']
 })
@@ -87,5 +89,20 @@ export class ThreeSceneComponent implements OnInit {
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
     });
+  }
+
+
+
+//Texto animado
+   ngAfterViewInit(): void {
+    const options = {
+      strings: ["Developer and Designer."],
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 9000,
+      loop: true
+    };
+
+    new Typed('#typed', options);
   }
 }
