@@ -5,7 +5,7 @@
   transition: transform 0.5s ease-in-out;
 
   &:hover {
-      transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
@@ -43,62 +43,7 @@
 
 /*Dispoitivos mobles*/
 @media (max-width: 1225px) {
-  .icons i {
-    visibility: hidden;
-  }
-
   .card img {
     width: 10rem;
   }
-
-  .card-text {
-    font-size: 1.1rem;
-  }
-}
-
-.background {
-  position: relative;
-  width: 100%;
-  height: auto; /* Ajusta la altura según tu diseño */
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.icons {
-  position: absolute;
-  font-size: 4rem; /* Tamaño del icono */
-  top: 50px;
-  transform: translateY(-50%);
-}
-.icons i {
-  margin-left: 70px;
-}
-.angular {
-  color: rgb(226, 43, 43);
-}
-.js {
-  color: rgb(225, 218, 12);
-}
-.html {
-  color: rgb(225, 72, 12);
-}
-.css {
-  color: rgb(12, 40, 225);
-}
-.bootstrap {
-  color: rgb(101, 12, 225);
-}
-.github {
-  color: rgb(0, 0, 0);
-}
-.node {
-  color: rgb(32, 218, 12);
-}
-.gitkraken {
-  color: rgb(10, 85, 7);
-}
-.docker {
-  color: rgb(12, 143, 225);
 }

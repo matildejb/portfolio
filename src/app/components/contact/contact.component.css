@@ -1,5 +1,51 @@
 .container {
-  width: 70%;
+  width: 80%;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-style: normal;
+  .background {
+  position: relative;
+  width: 100%;
+  height: auto; /* Ajusta la altura según tu diseño */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.icons {
+  font-size: 3.5rem; /* Tamaño del icono */
+  display: flex;
+  margin-bottom: 10px;
+  gap: 2rem;
+
+}
+.angular {
+  color: rgb(226, 43, 43);
+}
+.js {
+  color: rgb(225, 218, 12);
+}
+.html {
+  color: rgb(225, 72, 12);
+}
+.css {
+  color: rgb(12, 40, 225);
+}
+.bootstrap {
+  color: rgb(101, 12, 225);
+}
+
+.node {
+  color: rgb(32, 218, 12);
+}
+.gitkraken {
+  color: rgb(10, 85, 7);
+}
+.docker {
+  color: rgb(12, 143, 225);
+}
+  
 }
 
 .card {
@@ -43,9 +89,21 @@ a {
 @media (max-width: 767px) {
   .container {
     width: 100%;
+    
+
+      .icons {
+  font-size: 1.9rem; 
+  flex-wrap: wrap;
+  gap: 0.15rem;
+  margin: 0;
+  
+
+}
   }
 
   .author {
     font-size: 1rem;
   }
+
+
 }
