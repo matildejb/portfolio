@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgClass } from '@angular/common';
-import { NightModeService } from './services/night-mode.service';
 
 
 @Component({
@@ -16,9 +15,4 @@ import { NightModeService } from './services/night-mode.service';
 export class AppComponent {
   title = 'Portfolio';
 
-    nightModeService = inject(NightModeService);
-
-  isNightMode() {
-    return this.nightModeService.isNightMode();
-  }
 }
