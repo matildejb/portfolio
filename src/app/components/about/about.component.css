@@ -1,11 +1,11 @@
 .card img {
-  border-radius: 20%; /* Redondea la imagen al 50% del tamaño */
+  border-radius: 10%; 
   filter: brightness(1) contrast(1) saturate(1.4);
-  width: 15rem;
+  width: 13rem;
   transition: transform 0.5s ease-in-out;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -44,6 +44,13 @@
 /*Dispoitivos mobles*/
 @media (max-width: 1225px) {
   .card img {
-    width: 10rem;
+  width: 10rem;
+  margin-left: 10px;
+  
   }
+  .download {
+    height: 40px;
+    margin: auto;
+  }
+  
 }

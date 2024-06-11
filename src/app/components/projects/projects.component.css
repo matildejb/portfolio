@@ -1,6 +1,8 @@
-.custom-card {
+.container-projects {
+
+  .custom-card {
   width: calc(
-    33.333% - 20px
+    50% - 1rem
   ); /* Tamaño flexible de la tarjeta con un espacio fijo */
   margin: 20px; /* Espacio entre las tarjetas */
   border: 2px solid #004a59; /* Borde más marcado */
@@ -57,3 +59,7 @@ h5 {
   font-size: 2rem;
   color: rgb(101, 12, 225);
 }
+
+}
+
+
