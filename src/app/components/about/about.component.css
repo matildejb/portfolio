@@ -2,16 +2,25 @@
   border-radius: 20%; /* Redondea la imagen al 50% del tamaño */
   filter: brightness(1) contrast(1) saturate(1.4);
   width: 15rem;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+      transform: scale(1.2);
+  }
 }
 
 .card {
   padding: 5px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.6); /* Sombra para darle un efecto 3D */
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .card-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -43,8 +52,8 @@
   }
 
   .card-text {
-  font-size: 1.1rem;
-}
+    font-size: 1.1rem;
+  }
 }
 
 .background {

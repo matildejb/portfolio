@@ -1,5 +1,7 @@
 footer {
-    display: flex;
-    justify-content: end;
-    font-weight: bolder;
+  display: flex;
+  justify-content: end;
+  font-weight: bolder;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
 }

@@ -1,10 +1,13 @@
 li:hover {
-   font-weight: bolder;
+  font-weight: bolder;
+}
+
+.navbar {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .navbar-brand:hover {
-   color:#5AC8C8;
-    font-weight: bolder;
+  font-weight: bolder;
 }
-
-

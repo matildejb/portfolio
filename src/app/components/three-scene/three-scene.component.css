@@ -4,13 +4,15 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  font-family: "Pacifico", cursive;
+  font-style: normal;
 }
+
 
 .name {
   position: absolute;
   top: 100px;
   left: 30px;
-  font-style: italic;
 }
 
 .feature {
@@ -18,4 +20,5 @@
   color: #f16744;
   text-decoration: none;
   cursor: pointer;
+  font-style: italic;
 }
