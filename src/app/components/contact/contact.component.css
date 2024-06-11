@@ -2,6 +2,7 @@
   font-family: "Merriweather", serif;
   font-weight: 500;
   font-style: normal;
+  height: 100vh;
 
   .icons {
     font-size: 3.5rem; /* Tamaño del icono */
