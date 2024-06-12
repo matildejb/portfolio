@@ -6,9 +6,8 @@ li:hover {
   font-family: "Merriweather", serif;
   font-weight: 500;
   font-style: normal;
-  background: linear-gradient(to left, #fff, #fff, #f1674484, #f07354bd 70%);
-  border: 10x solid #027184;
-  margin-top: 10px;
+  margin: 10px 10px 0 10px;
+  border: 2px solid #f07354bd;
 }
 
 button {
