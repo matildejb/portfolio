@@ -6,13 +6,11 @@ li:hover {
   font-family: "Merriweather", serif;
   font-weight: 500;
   font-style: normal;
-  margin: 10px 10px 0 10px;
+  margin: 10px 15px 0 15px;
   border: 2px solid #f07354bd;
+  border-radius: 10px;
 }
 
-button {
-  border: 5px solid #f07354bd;
-}
 .navbar-brand:hover {
   font-weight: bolder;
 }
