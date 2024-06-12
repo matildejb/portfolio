@@ -6,16 +6,14 @@ li:hover {
   font-family: "Merriweather", serif;
   font-weight: 500;
   font-style: normal;
-  background: linear-gradient(to left, #fff, #fff, #f1674484, #f07354 70%);
+  background: linear-gradient(to left, #fff, #fff, #f1674484, #f07354bd 70%);
   border: 10x solid #027184;
   margin-top: 10px;
 }
 
 button {
-  background-color: #f07354;
+  border: 5px solid #f07354bd;
 }
-
 .navbar-brand:hover {
   font-weight: bolder;
 }
-
