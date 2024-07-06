@@ -35,6 +35,10 @@
   .docker {
     color: rgb(12, 143, 225);
   }
+  .mysql {
+     color: rgb(12, 143, 225);
+      margin-top: -10px;
+  }
 }
 
 .card1 {
