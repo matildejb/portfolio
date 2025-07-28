@@ -4,12 +4,11 @@
   font-style: normal;
   height: 100vh;
 
-  .icons {
-    font-size: 3.5rem; /* Tamaño del icono */
-    display: flex;
-    margin-bottom: 10px;
-    gap: 2rem;
+  .icon i {
+    font-size: 3.5rem;
+    margin: 1rem;
   }
+
   .angular {
     color: rgb(226, 43, 43);
   }
@@ -34,10 +33,6 @@
   }
   .docker {
     color: rgb(12, 143, 225);
-  }
-  .mysql {
-     color: rgb(12, 143, 225);
-      margin-top: -10px;
   }
 }
 
@@ -80,11 +75,9 @@ a {
 /* Styles specific to mobile devices */
 @media (max-width: 767px) {
   .container {
-    .icons {
-      font-size: 1.9rem;
-      flex-wrap: wrap;
-      gap: 0.2rem;
-      margin: 0;
+    .icon i {
+      font-size: 2.5rem;
+      margin: 0.2rem;
     }
 
     .author {

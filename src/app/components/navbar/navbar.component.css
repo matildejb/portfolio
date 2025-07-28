@@ -2,6 +2,10 @@ li:hover {
   font-weight: bolder;
 }
 
+.casita:hover {
+  color: #f07354bd
+}
+
 .navbar {
   font-family: "Merriweather", serif;
   font-weight: 500;
