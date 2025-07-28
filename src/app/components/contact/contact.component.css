@@ -2,8 +2,7 @@
   font-family: "Merriweather", serif;
   font-weight: 500;
   font-style: normal;
-  height: 100vh;
-
+  
   .icon i {
     font-size: 3.5rem;
     margin: 1rem;
@@ -45,25 +44,28 @@
   font-weight: bolder;
 }
 
+.footer-contact {
+  background: linear-gradient(to right, #34495e, #2c3e50);
+  width: 60%;
+  border-radius: 10px;
+}
+
+.footer-contact a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+  color: #027184;
+}
+
 .author {
   font-size: 1.25rem;
 }
 
 a {
   text-decoration: none;
-}
-
-.datos {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-
-  & a {
-    color: #027184;
-  }
-  & i {
-    color: #027184;
-  }
 }
 
 .iconos {
@@ -86,6 +88,14 @@ a {
 
     .datos {
       font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+
+    }
+
+    .iconos {
+      font-size: 1.5rem;
     }
   }
 }
