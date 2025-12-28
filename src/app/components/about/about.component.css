@@ -1,12 +1,10 @@
 .card img {
+  width: 12rem; /* ancho deseado */
+  height: 16rem; /* altura deseada */
+  object-fit: cover; /* mantiene proporción y recorta si es necesario */
   border-radius: 10%;
   filter: brightness(1) contrast(1) saturate(1.4);
-  width: 13rem;
   transition: transform 0.5s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
 .card {
@@ -82,8 +80,7 @@
 /*Dispoitivos mobles*/
 @media (max-width: 1225px) {
   .card img {
-    width: 10rem;
-    margin-left: 10px;
+    display: none; /* ocultar la imagen */
   }
   .download {
     height: 40px;

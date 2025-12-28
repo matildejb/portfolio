@@ -67,6 +67,12 @@
     color: rgb(12, 143, 225);
     margin-top: -10px;
   }
+
+  .php {
+    font-size: 2rem;
+    color: rgb(58, 12, 225);
+    margin-top: -10px;
+  }
 }
 
 .github {

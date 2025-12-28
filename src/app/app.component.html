@@ -1,9 +1,11 @@
-<header>
+<body class="d-flex flex-column min-vh-100">
+  <header>
     <app-navbar></app-navbar>
-</header>
+  </header>
 
+  <main class="flex-fill">
+    <router-outlet></router-outlet>
+  </main>
 
-<router-outlet />
-
-
-<app-footer></app-footer>
+  <app-footer></app-footer>
+</body>
